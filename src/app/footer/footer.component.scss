@@ -1,0 +1,30 @@
+.footer-background {
+    background-image: url('https://cdn.discordapp.com/attachments/492779090319900692/1234528145139306609/poza.png?ex=66310f6e&is=662fbdee&hm=034957c0a2704a60b5798e5e52882fe63bb7fbf58ba890f69379f3b9e60d7a2c&');
+    background-size: cover;
+    background-position: center;
+    color: red;
+  
+    .footer-container {
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+  button {
+    margin: 10px 20px;
+    padding: 10px 20px;
+    background-color: transparent;
+    border: none;
+    color: red;
+    font-size: 1.2em;
+    border-radius: 15%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  
+    &:hover {
+      background-color: #e6dc91;
+    }
+  }
+  
+  

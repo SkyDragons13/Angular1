@@ -1,0 +1,6 @@
+<div class="app-container">
+  <!-- Router outlet for displaying routed components -->
+  <app-header [order]="order"></app-header>
+  <app-card (orderClicked)="onOrderClicked($event)"></app-card>
+  <app-footer></app-footer>
+</div>

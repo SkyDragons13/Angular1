@@ -1,0 +1,29 @@
+<div class="header-background">
+    <div class="header-container">
+      <h1>My Website</h1> <!-- Title in the top left -->
+      
+      <div class="header-nav">
+        <button>Home</button>
+        <button>Bikes</button>
+        <button>Parts</button>
+        <button>Shop</button>
+        <button>About</button>
+        <button>Login</button>
+      </div>
+  
+      <div class="search-container">
+        <input type="text" placeholder="Search..." [(ngModel)]="searchTerm" (keyup.enter)="search()">
+      </div>
+    </div>
+    <div class="description">
+        <h3>Short description here...</h3>
+      </div>
+  
+      <div class="order-now">
+        <button>Order Now</button>
+      </div>
+    <span class='order'>
+        <p>{{order}}</p>
+    </span>
+  </div>
+  

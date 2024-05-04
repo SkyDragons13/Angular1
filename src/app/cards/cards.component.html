@@ -1,0 +1,38 @@
+<div>
+    <h2 class="title">Our BMW Motorcycles</h2> <!-- Title for the first section -->
+    <div class="card-container">
+      <span class="nav-btn prev" (click)="scrollCards('prev',listOfCards,'bikes')">&Longleftarrow;</span>
+      <div *ngFor="let card of visibleCards" class="card" [class.hovered]="isHovered" (mouseenter)="onMouseEnter()" (mouseleave)="onMouseLeave()">
+        <span class="card-content">
+          <!-- Display card data -->
+          <img [src]="card.image" alt="{{ card.title }}">
+          <h3>{{ card.title }}</h3>
+          <p>{{ card.description }}</p>
+          <div class="card-footer">
+            <div class="price">{{ card.price }}</div>
+            <button class="button" (click)="onOrderClicked(card.title)">Order Now</button>
+          </div>
+        </span>
+      </div>
+      <span class="nav-btn next" (click)="scrollCards('next',listOfCards,'bikes')">&Longrightarrow;</span>
+    </div>
+  </div>
+  <div>
+    <h2 class="title">Our BMW Parts</h2> <!-- Title for the first section -->
+    <div class="card-container">
+      <span class="nav-btn prev" (click)="scrollCards('prev',listOfParts,'parts')">&Longleftarrow;</span>
+      <div *ngFor="let card of visibleParts" class="card" [class.hovered]="isHovered" (mouseenter)="onMouseEnter()" (mouseleave)="onMouseLeave()">
+        <span class="card-content">
+          <!-- Display card data -->
+          <img [src]="card.image" alt="{{ card.title }}">
+          <h3>{{ card.title }}</h3>
+          <p>{{ card.description }}</p>
+          <div class="card-footer">
+            <div class="price">{{ card.price }}</div>
+            <button class="button" (click)="onOrderClicked(card.title)">Order Now</button>
+          </div>
+        </span>
+      </div>
+      <span class="nav-btn next" (click)="scrollCards('next',listOfParts,'parts')">&Longrightarrow;</span>
+    </div>
+  </div>
