@@ -1,4 +1,4 @@
-/* card.component.scss */
+
 .card-container {
     display: grid;
     display: flex;
@@ -10,7 +10,7 @@
     .prev,
 .next {
   position: absolute;
-  top: 50%; /* Center vertically */
+  top: 50%;
   transform: translateY(-50%);
   background: transparent;
   border-style: solid;
@@ -21,7 +21,7 @@
   color: #007bff;
   font-size: 24px;
   cursor: pointer;
-  z-index: 1; /* Ensure buttons are above the cards */
+  z-index: 1; /*butoanele sa fie peste*/
 }
 
 .prev {
@@ -36,8 +36,8 @@
 
   }
   .card {
-    display: inline-block; /* Display cards as inline blocks */
-    width: 25.00%; /* Four cards per row with space between */
+    display: inline-block;
+    width: 25.00%;
     border: 20px solid #a9bdcd;
     border-radius: 2%;
     height:400px;
@@ -72,13 +72,13 @@
   
     .card-footer {
       display: flex;
-      justify-content: space-between; /* Space items evenly */
-      align-items: baseline; /* Align items on the baseline */
+      justify-content: space-between; 
+      align-items: baseline; 
       margin-top: auto;
     }
   
     .price {
-      margin-right: auto; /* Push the button to the right */
+      margin-right: auto; 
     }
   
     .button {

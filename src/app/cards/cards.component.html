@@ -1,10 +1,9 @@
 <div>
-    <h2 class="title">Our BMW Motorcycles</h2> <!-- Title for the first section -->
+    <h2 class="title">Our BMW Motorcycles</h2>
     <div class="card-container">
-      <span class="nav-btn prev" (click)="scrollCards('prev',listOfCards,'bikes')">&Longleftarrow;</span>
+      <span class="nav-btn prev" (click)="scrollCards('prev',listOfCards,visibleCards,'bikes')">&Longleftarrow;</span>
       <div *ngFor="let card of visibleCards" class="card" [class.hovered]="isHovered" (mouseenter)="onMouseEnter()" (mouseleave)="onMouseLeave()">
         <span class="card-content">
-          <!-- Display card data -->
           <img [src]="card.image" alt="{{ card.title }}">
           <h3>{{ card.title }}</h3>
           <p>{{ card.description }}</p>
@@ -14,16 +13,15 @@
           </div>
         </span>
       </div>
-      <span class="nav-btn next" (click)="scrollCards('next',listOfCards,'bikes')">&Longrightarrow;</span>
+      <span class="nav-btn next" (click)="scrollCards('next',listOfCards,visibleCards,'bikes')">&Longrightarrow;</span>
     </div>
   </div>
   <div>
-    <h2 class="title">Our BMW Parts</h2> <!-- Title for the first section -->
+    <h2 class="title">Our BMW Parts</h2>
     <div class="card-container">
-      <span class="nav-btn prev" (click)="scrollCards('prev',listOfParts,'parts')">&Longleftarrow;</span>
+      <span class="nav-btn prev" (click)="scrollCards('prev',listOfParts,visibleParts,'parts')">&Longleftarrow;</span>
       <div *ngFor="let card of visibleParts" class="card" [class.hovered]="isHovered" (mouseenter)="onMouseEnter()" (mouseleave)="onMouseLeave()">
         <span class="card-content">
-          <!-- Display card data -->
           <img [src]="card.image" alt="{{ card.title }}">
           <h3>{{ card.title }}</h3>
           <p>{{ card.description }}</p>
@@ -33,6 +31,6 @@
           </div>
         </span>
       </div>
-      <span class="nav-btn next" (click)="scrollCards('next',listOfParts,'parts')">&Longrightarrow;</span>
+      <span class="nav-btn next" (click)="scrollCards('next',listOfParts,visibleParts,'parts')">&Longrightarrow;</span>
     </div>
   </div>

@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms'; // Import FormsModule
-
+import { FormsModule } from '@angular/forms'; 
 import { HeaderComponent } from './header.component';
 import { RouterModule } from '@angular/router';
 
@@ -10,7 +9,7 @@ import { RouterModule } from '@angular/router';
   ],
   imports: [
     CommonModule,
-    FormsModule, // Add FormsModule here
+    FormsModule, 
     RouterModule.forChild([
         { path: '', component: HeaderComponent }
       ])

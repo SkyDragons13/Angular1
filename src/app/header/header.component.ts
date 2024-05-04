@@ -7,7 +7,6 @@ import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   @Output() searchEvent = new EventEmitter<string>();
-  @Output() selectItem = new EventEmitter<string>();
   searchTerm: string = '';
   @Input() order!:string;
 
@@ -18,5 +17,6 @@ export class HeaderComponent implements OnInit {
 
   search(): void {
     this.searchEvent.emit(this.searchTerm);
+    console.log('Search sent')
   }
 }

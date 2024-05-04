@@ -1,6 +1,5 @@
 <div class="app-container">
-  <!-- Router outlet for displaying routed components -->
-  <app-header [order]="order"></app-header>
-  <app-card (orderClicked)="onOrderClicked($event)"></app-card>
+  <app-header (searchEvent)="onSearch($event)" [order]="order"></app-header>
+  <app-card (orderClicked)="onOrderClicked($event)" [searchTerm]="searchTerm"></app-card>
   <app-footer></app-footer>
 </div>

@@ -1,4 +1,4 @@
-// cards/cards.service.ts
+
 import { Injectable } from '@angular/core';
 import { Card } from './cards.interface';
 
@@ -74,6 +74,12 @@ export class CardsService {
             image:'https://i.pinimg.com/564x/94/3d/f9/943df96adb50e223037c5aa2242c9128.jpg',
             description:'Red and White RR stickers',
             price:'20$'
+        },
+        {
+          title:'Mirrors',
+          image:'https://i.pinimg.com/564x/6c/b5/ac/6cb5aca6d2877b9630c41171dc9f649c.jpg',
+          description:'Rear view sport mirrors',
+          price:'500$'
         },
     ]
   }

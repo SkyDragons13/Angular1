@@ -14,12 +14,6 @@
         display: flex;
       }
   
-      .description {
-        margin-top: 20px;
-        color: red;
-
-      }
-  
   
       .search-container {
         display: flex;
@@ -33,6 +27,13 @@
         border-radius: 20%;
       }
   }
+  .description {
+    margin-top: 20px;
+    color: red;
+    margin-left: 20px;
+    align-items: center;
+  }
+
   button {
     margin: 10px 20px;
     padding: 10px 20px;
